@@ -154,3 +154,12 @@ environment:
 links:
   - puppetdb:puppetdb.local
 ```
+
+In the Portland office, the DNS suffix `delivery.puppetlabs.net` may be added, in which case try these instead:
+
+```
+environment:
+  - PUPPETDB_SERVER_URLS=https://puppetdb.delivery.puppetlabs.net:8081
+links:
+  - puppetdb:puppetdb.delivery.puppetlabs.net
+```
